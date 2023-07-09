@@ -10,6 +10,9 @@
         display: inline-block
         &:not(:last-child)
             margin-right: 5rem
+        @include respond(tab-land)
+            &:not(:last-child)
+                margin-right: 1.6rem
     &__link
         &:link, &:visited
             color: $color-gray
@@ -20,7 +23,7 @@
             font-weight: 300
             display: inline-block
             transition: .3s all
-        &:active  
+        &:active, 
         &:hover
             transform: rotate(5deg) scale(1.2)
             color: $color-brown-dark

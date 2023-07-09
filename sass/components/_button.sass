@@ -9,6 +9,9 @@
         position: relative
         font-size: $font-size-paragraph-h3
         border: none
+        @include respond(tab-land)
+            font-size: 1.8rem
+            padding: 1.2rem 3rem
     &:hover
         transform: translateY(-.4rem)
         box-shadow: (0px .4rem .4rem rgba(0, 0, 0, 0.3))
@@ -40,7 +43,7 @@
     &, &:link, &:visited
         background: $color-brown-dark
         color: $color-white
-    &:hover
+    &:hover,
     &::after
         background: $color-brown-dark
         
