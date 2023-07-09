@@ -7,6 +7,9 @@
     background-size: cover
     background-repeat: no-repeat
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%)
+    @include respond(tab-port)
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%)
+
     &__logo
         position: absolute
         left: 5rem

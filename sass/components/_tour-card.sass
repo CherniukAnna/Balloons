@@ -3,6 +3,8 @@
     height: 50rem
     perspective: 150rem
     -moz-perspective: 150rem
+    @include respond(tab-port)
+        height: 60rem
     
     &__side
         position: absolute
@@ -16,6 +18,8 @@
         box-shadow: $box-shadow
         border-radius: .5rem
         overflow: hidden
+        @include respond(tab-port)
+            height: 60rem
         // &_front
             
 
@@ -47,6 +51,8 @@
             background-position: center
             background-size: cover
             background-repeat: no-repeat
+        @include respond(tab-port)
+            height: 30rem
     &__title
         font-size: 2.8rem
         letter-spacing: .2rem
@@ -56,6 +62,9 @@
         position: absolute
         top: 17rem
         right: 0rem
+        @include respond(tab-port)
+            top: 25rem
+            font-size: 3.8rem
     &__span
         background: linear-gradient(90deg, $color-brown-light, $color-brown-dark)
         padding: 1rem 2rem .3rem 2rem
@@ -66,6 +75,8 @@
             right: 0
             padding-bottom: 1rem
             padding-top: 0rem
+            @include respond(tab-port)
+                top: 4.4rem
 
     &__descr
         ul
@@ -83,6 +94,8 @@
                     margin-bottom: 2rem
                 @include respond(tab-land)
                     font-size: 1.5rem
+                @include respond(tab-port)
+                    font-size: 2rem
 
     &__backSide-box
         position: absolute
